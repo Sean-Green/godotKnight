@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://gfwuds3g8xo7"]
+
+[ext_resource type="Texture2D" uid="uid://bd60t1bnoq0o0" path="res://sidebar/sidebar.png" id="1_2ri73"]
+[ext_resource type="Texture2D" uid="uid://cmk0h4yevihc7" path="res://sidebar/Card.png" id="2_kihk5"]
+
+[node name="GameWindow" type="Node2D"]
+
+[node name="Sidebar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_2ri73")
+
+[node name="CardBar" type="Node2D" parent="."]
+position = Vector2(1500, 0)
+
+[node name="RightSidebar" type="TextureRect" parent="CardBar"]
+anchors_preset = -1
+offset_right = 420.0
+offset_bottom = 1080.0
+texture = ExtResource("1_2ri73")
+
+[node name="TextureRect" type="TextureRect" parent="CardBar"]
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 210.0
+offset_bottom = 287.0
+texture = ExtResource("2_kihk5")
