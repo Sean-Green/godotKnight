@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://gfwuds3g8xo7"]
+
+[ext_resource type="Texture2D" uid="uid://bd60t1bnoq0o0" path="res://assets/sidebar.png" id="1_gdlau"]
+[ext_resource type="Script" path="res://scripts/DeckBar.cs" id="2_qglat"]
+
+[node name="GameWindow" type="Node2D"]
+script = ExtResource("2_qglat")
+
+[node name="CharacterBar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_gdlau")
+
+[node name="DeckBar" type="Node2D" parent="."]
+position = Vector2(960, 0)
+script = ExtResource("2_qglat")
+
+[node name="Background" type="TextureRect" parent="DeckBar"]
+offset_right = 320.0
+offset_bottom = 720.0
+texture = ExtResource("1_gdlau")
